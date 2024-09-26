@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(authMiddleware);
 
 // Connect to MongoDB
-const mongoURI = 'mongodb+srv://todo:todo123@cluster0.drqortc.mongodb.net/todo-app?retryWrites=true&w=majority';
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
