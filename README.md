@@ -7,9 +7,11 @@
 npn i -y
 
 npm i bcryptjs 
+npm i body-parser 
 npm i cors 
+npm i dotenv 
 npm i express 
-npm i jsonwebtoken 
+npm i firebase-admin 
 npm i mongoose 
 ```
 ## Keys
